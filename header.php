@@ -1,10 +1,41 @@
 <!DOCTYPE html>
-<html <?php language_attributes();?>>
+<html <?php language_attributes(); ?>>
+
 <head>
-    <meta <?php bloginfo('charset');?>>
+    <meta <?php bloginfo('charset'); ?>>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class() ;?>>
-    
+<body <?php body_class(); ?>>
+
+    <header style="background-color:#123524" class="py-2">
+        <nav class="main-menu navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="<?php echo home_url(); ?>">
+                    <!-- poderia ser um logo customizada. Porem o wp aplica algumas formatações que deixam a logo no centro. Pra esse projeto não me cai muito bem  -->
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="" width="" height="40" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav d-flex align-items-center ">
+                        <?php
+                        wp_nav_menu(array(
+                            'theme_location' => 'main_menu',
+                            'container' => 'ul',
+                            'container_class' => 'navbar-nav',
+                            'menu_class' => 'navbar-nav',
+                            'fallback_cb' => '__return_false',
+                            'items_wrap' => '%3$s', // Remove o container <ul> padrão do wp_nav_menu
+                        ));
+                        ?>
+                        <li class="nav-item list-unstyled">
+                            <a href="#" class="btn btn-custom btn-highlight fw-bold border-0 px-2 py-1 rounded-3 shadow">Entrar em Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
