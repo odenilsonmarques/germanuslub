@@ -13,6 +13,7 @@ Tags: environmnet, oil, nature, recicle, planet, collect, discart, environmental
 body {
     background-color: #fff;
 }
+
 .main-menu li {
     margin-right: 20px;
 }
@@ -29,47 +30,52 @@ body {
 
 .main-menu li a:hover {
     color: #49AF45;
-    
+
 }
 
 
 a.btn-highlight {
-    background-color: #49AF45; /* Cor de destaque, exemplo: laranja */
-    color: #ffffff; /* Texto branco */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Suavidade na interação */
+    background-color: #49AF45;
+    /* Cor de destaque, exemplo: laranja */
+    color: #ffffff;
+    /* Texto branco */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    /* Suavidade na interação */
 }
 
 a.btn-highlight:hover {
-    background-color: #fff; /* Alteração na cor ao passar o mouse */
-    transform: scale(1.05); /* Leve aumento para destacar */
+    background-color: #fff;
+    /* Alteração na cor ao passar o mouse */
+    transform: scale(1.05);
+    /* Leve aumento para destacar */
     color: #49AF45;
 }
 
 
-.custom-background-hero{
+.custom-background-hero {
     background-color: #49AF45;
 }
 
-a.custom-btn-hero{
+a.custom-btn-hero {
     background-color: #123524;
 }
 
 
-h5.card-title{
+h5.card-title {
     color: #123524;
 }
 
-p.card-text{
+p.card-text {
     font-size: 15px;
 }
 
-.our-services{
+.our-services {
     padding: 40px;
 }
 
 
-a.custom-btn-services{
-    border:1px solid #49AF45;
+a.custom-btn-services {
+    border: 1px solid #49AF45;
     color: #49AF45;
 }
 
@@ -79,7 +85,7 @@ a.custom-btn-services{
     border-radius: 15px;
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border:1px solid #49AF45;
+    border: 1px solid #49AF45;
 }
 
 .our-services .card:hover {
@@ -87,30 +93,112 @@ a.custom-btn-services{
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.contacts{
+.contacts {
     background-color: #123524;
-    padding:30px
+    padding: 30px
 }
 
-.contacts h3{
-    max-width: 250px; 
+.contacts h3 {
+    max-width: 250px;
     /* border: 1px solid red; */
     color: #49AF45;
 }
 
-.contacts p{
+.contacts p {
     color: #49AF45;
     max-width: 340px;
     font-size: 20px;
 }
 
-a.custom-btn-contact{
-    background-color: #49AF45; /* Cor de destaque, exemplo: laranja */
-    color: #ffffff; /* Texto branco */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Suavidade na interação */
+a.custom-btn-contact {
+    background-color: #49AF45;
+    /* Cor de destaque, exemplo: laranja */
+    color: #ffffff;
+    /* Texto branco */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    /* Suavidade na interação */
 
 }
 
-.shadow-contact{
+.shadow-contact {
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* estilo para o slide */
+.image-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 06));
+}
+
+.custom-caption {
+    top: 35%;
+    /* Ajuste o valor conforme necessário */
+    transform: translateY(-5%);
+    /* Centraliza verticalmente baseado no valor do top */
+    position: absolute;
+    /* Garante que o top funcione */
+}
+
+.custom-caption h5 {
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.custom-caption p {
+    color: #f0f0f0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.custom-caption h5 {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.custom-caption p {
+    animation: fadeInUp 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.custom-caption h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.custom-caption p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
 }
