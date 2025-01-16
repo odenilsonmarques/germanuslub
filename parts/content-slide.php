@@ -15,30 +15,19 @@
                                 <h5 class="fs-1 fw-bolder">Cada gota conta: <br> descarte correto, impacto positivo!</h5>
                                 <p>Faça sua parte pelo futuro do planeta.</p>
                             </div>
-                            <style>
-                                
-
-
-                               
-
-                                
-
-                               
-                                
-                            </style>
                         </div>
                         <div class="carousel-item image-wrapper">
                             <img src="<?php echo get_template_directory_uri() . '/assets/img/img-slide-one.webp'; ?>" alt="Imagem ilustrativa" class="img-fluid">
                             <div class="carousel-caption d-none d-md-block custom-caption">
-                                <h5 class="fs-2">Cada gota conta: <br> descarte correto, impacto positivo!</h5>
-                                <p>Faça sua parte pelo futuro do planeta.</p>
+                                <h5 class="fs-2">Atuamos com responsabilidade para preservar <br> recursos para as próximas gerações</h5>
+                                <p>Cuidando hoje, pensando no amanhã.</p>
                             </div>
                         </div>
                         <div class="carousel-item image-wrapper">
                             <img src="<?php echo get_template_directory_uri() . '/assets/img/img-slide-one.webp'; ?>" alt="Imagem ilustrativa" class="img-fluid">
                             <div class="carousel-caption d-none d-md-block custom-caption">
-                                <h5 class="fs-2">Cada gota conta: <br> descarte correto, impacto positivo!</h5>
-                                <p>Faça sua parte pelo futuro do planeta.</p>
+                                <h5 class="fs-2">Guiamos nossas ações com foco no <br> equilíbrio entre progresso e meio ambiente</h5>
+                                <p>Harmonia entre desenvolvimento e natureza.</p>
                             </div>
                         </div>
                     </div>
