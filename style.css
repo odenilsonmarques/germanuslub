@@ -32,7 +32,6 @@ body {
     
 }
 
-
 a.btn-highlight {
     background-color: #49AF45; /* Cor de destaque, exemplo: laranja */
     color: #ffffff; /* Texto branco */
@@ -63,14 +62,14 @@ p.card-text{
     font-size: 15px;
 }
 
-.our-services{
-    padding: 40px;
-}
-
 
 a.custom-btn-services{
     border:1px solid #49AF45;
     color: #49AF45;
+}
+
+.our-services{
+    padding: 40px;
 }
 
 .our-services .card {
@@ -113,4 +112,37 @@ a.custom-btn-contact{
 
 .shadow-contact{
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.our-about {
+    padding: 40px;
+}
+
+.our-about .text-about {
+    padding: 40px;
+    /*margin-right: 200px;
+    margin-left: 200px;*/
+}
+
+p.text-about {
+    font-size: 15px;
+    color: #123524;
+    line-height: 25px;
+    max-width: 100%;
+}
+
+.our-about .card-infor {
+    background: #123524;
+    padding: 20px;
+    max-width: 450px;
+}
+
+h5.content-title {
+    font-size: 15px;
+    color: #49AF45;
+}
+
+p.content-text {
+    font-size: 15px;
+    color: #FFFFFF;
 }
