@@ -133,30 +133,45 @@ a.custom-btn-contact {
 
 .our-about .text-about {
     padding: 40px;
+    max-width: 100%;
     /*margin-right: 200px;
     margin-left: 200px;*/
 }
 
+.our-about .text-about:hover {
+    animation: fadeInUp 1s ease-in-out;
+}
+
 p.text-about {
-    font-size: 15px;
+    font-family: Akshar,sans-serif;
+    font-size: 26px;
     color: #123524;
-    line-height: 25px;
-    max-width: 100%;
+    line-height: 40px;
+    
 }
 
 .our-about .card-infor {
     background: #123524;
     padding: 20px;
     max-width: 450px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.our-about .card-infor:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    
 }
 
 h5.content-title {
-    font-size: 15px;
+    font-family: Akshar,sans-serif;
     color: #49AF45;
 }
 
 p.content-text {
-    font-size: 15px;
+    font-family: Akshar,sans-serif;
+    font-size: 16px;
     color: #FFFFFF;
 }
 
