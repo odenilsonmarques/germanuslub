@@ -9,7 +9,7 @@
 
 <body <?php body_class(); ?>>
 
-    <header style="background-color:#123524" class="py-2">
+    <header class="py-2 fixed-top">
         <nav class="main-menu navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <a class="navbar-brand" href="<?php echo home_url(); ?>">
@@ -32,10 +32,15 @@
                         ));
                         ?>
                         <li class="nav-item list-unstyled">
-                            <a href="#" class="btn btn-custom btn-highlight fw-bold border-0 px-2 py-1 rounded-3 shadow">Entrar em Contato</a>
+                            <a href="https://wa.me/5511932117180?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%20Germanuslub." target="_blank" rel="noopener noreferrer" class="btn btn-custom btn-highlight fw-bold border-0 px-2 py-1 rounded-3 shadow">Entrar em Contato</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    <?php get_template_part('parts/menu-offcanva'); ?>
+
+
+
+  

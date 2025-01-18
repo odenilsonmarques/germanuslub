@@ -14,6 +14,10 @@ body {
     background-color: #fff;
 }
 
+header {
+    background-color: #123524;
+}
+
 .main-menu li {
     margin-right: 20px;
 }
@@ -53,7 +57,21 @@ a.btn-highlight:hover {
 
 .custom-background-hero {
     background-color: #49AF45;
+    margin-top: 50px;
 }
+
+
+@media (max-width: 767px) {
+    .custom-background-hero {
+        background-color: #49AF45;
+        margin-top: 30px;
+    }
+}
+
+
+
+
+
 
 a.custom-btn-hero {
     background-color: #123524;
@@ -78,7 +96,7 @@ a.custom-btn-services {
     color: #49AF45;
 }
 
-.our-services{
+.our-services {
     padding: 40px;
 }
 
@@ -123,34 +141,47 @@ a.custom-btn-contact {
 
 }
 
+
+a.btn-custom-menu-mobile {
+    background-color: #123524;
+    /* Cor de destaque, exemplo: laranja */
+    color: #ffffff;
+    /* Texto branco */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    /* Suavidade na interação */
+
+}
+
+
 .shadow-contact {
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-.our-about {
+.about {
     padding: 40px;
 }
 
-.our-about .text-about {
-    padding: 40px;
-    max-width: 100%;
-    /*margin-right: 200px;
-    margin-left: 200px;*/
+.about .text-about {
+    /* padding-top: 20px; */
 }
 
-.our-about .text-about:hover {
+.about span {
+    color: #49AF45;
+}
+
+/* .about .text-about:hover {
     animation: fadeInUp 1s ease-in-out;
-}
+} */
 
 p.text-about {
-    font-family: Akshar,sans-serif;
-    font-size: 26px;
+    font-family: Akshar, sans-serif;
+    font-size: 23px;
     color: #123524;
-    line-height: 40px;
-    
+
+
 }
 
-.our-about .card-infor {
+.about .card-infor {
     background: #123524;
     padding: 20px;
     max-width: 450px;
@@ -158,19 +189,40 @@ p.text-about {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.our-about .card-infor:hover {
+.about .card-infor:hover {
     transform: scale(1.05);
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
-    
+
+}
+
+
+/* Para telas grandes (>= 768px), limitar a largura para 75% */
+@media (min-width: 768px) {
+    .custom-width {
+        width: 75% !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .text-about {
+        font-size: 18px !important;
+        /* Ajuste conforme necessário */
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        /* Efeito de sombra */
+
+    }
+    .about .about-all-text {
+        margin-top: -30px;
+    }
 }
 
 h5.content-title {
-    font-family: Akshar,sans-serif;
+    font-family: Akshar, sans-serif;
     color: #49AF45;
 }
 
 p.content-text {
-    font-family: Akshar,sans-serif;
+    font-family: Akshar, sans-serif;
     font-size: 16px;
     color: #FFFFFF;
 }
@@ -195,9 +247,30 @@ p.content-text {
     /* Garante que o top funcione */
 }
 
+
+
+
+
+@media (max-width: 767px) {
+    .custom-caption {
+        top: 10%; /* Ajuste o valor conforme necessário para telas pequenas */
+        transform: translateY(0); /* Remove o ajuste de Y */
+        padding: 0 20px; /* Adiciona algum espaçamento nas laterais para o texto não colar nas bordas */
+    }
+    .carousel-caption.custom-caption h5{
+        font-size: 13px;
+    }
+
+    .carousel-caption.custom-caption p{
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+}
+
 .custom-caption h5 {
     color: #ffffff;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    font-size: 30px;
 }
 
 .custom-caption p {
@@ -237,7 +310,7 @@ p.content-text {
 
 .custom-caption h5 {
     font-family: 'Poppins', sans-serif;
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
     font-weight: 700;
 }
 
@@ -252,4 +325,26 @@ p.content-text {
     height: auto;
     max-height: 600px;
     object-fit: cover;
+}
+
+footer {
+    background-color: #123524;
+}
+
+footer h5 {
+    color: #49AF45;
+}
+
+.all-rights {
+    background-color: #49AF45;
+}
+
+.offcanvas-body li {
+    margin-top: 10px;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
 }
