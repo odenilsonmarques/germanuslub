@@ -45,7 +45,7 @@
 <section class="our-services" id="services">
     <div class="container">
         <div class="row">
-            <h2 class="text-center py-4 fs-3 mb-5">NOSSOS SERVIÇOS</h2>
+            <h2 class="text-center py-4 mt-3 fs-3 mb-5">NOSSOS SERVIÇOS</h2>
 
             <?php
             $query = new WP_Query([

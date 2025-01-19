@@ -1,7 +1,7 @@
 <section class="about" id="about">
     <div class="container">
         <div class="row">
-            <h2 class="text-center py-4 fs-3 mb-5">SOBRE NÓS</h2>
+            <h2 class="text-center py-4 fs-3  mt-3 mb-5">SOBRE NÓS</h2>
 
             <div class="col-lg-6 col-md-4 col-sm-12 text-center text-md-start about-all-text">
                 <h3><span class="fw-bolder">Somos a Germanus Lub</span></h3>

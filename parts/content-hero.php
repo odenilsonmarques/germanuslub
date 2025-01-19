@@ -2,13 +2,13 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 py-5 mt-4">
-                <h1 class="text-white"><?php echo esc_html(get_theme_mod('set_hero_title', 'Título padrão')); ?></h1>
+                <h1 class="text-white mt-4"><?php echo esc_html(get_theme_mod('set_hero_title', 'Título padrão')); ?></h1>
                 <p class="text-white"><?php echo esc_html(get_theme_mod('set_hero_subtitle', 'Subtitulo padrão')); ?></p>
                 <a href="<?php echo esc_url(get_theme_mod("set_hero_button_link")); ?>" target="_blank" rel="noopener noreferrer" class="btn btn-lg text-decoration-none fw-bolder fs-6 custom-btn-hero text-white">
                     <?php echo esc_html(get_theme_mod("set_hero_text_button", 'texto do botão')); ?>
                 </a>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 py-5 text-center mt-2">
+            <div class="col-lg-6 col-md-6 col-sm-12 py-5 text-center mt-3">
                 <?php
                 // Verifica se a imagem foi definida
                 $hero_image = get_theme_mod("set_hero_image");

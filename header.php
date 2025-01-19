@@ -4,6 +4,24 @@
 <head>
     <meta <?php bloginfo('charset'); ?>>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php wp_title('|', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+    <meta name="description" content="Transformamos responsabilidade ambiental em ação. Especializados na coleta correta de óleo mineral, óleo hidráulico e óleo diesel, 
+    garantimos eficiência e sustentabilidade. Nosso compromisso é promover um futuro mais limpo, consciente e alinhado com as melhores práticas de preservação ambiental">
+    <meta name="keywords" content="responsabilidade ambiental, coleta de óleo, óleo mineral, óleo hidráulico, óleo diesel, reciclagem de óleo, gestão de resíduos, 
+    impacto positivo, práticas sustentáveis, tratamento de resíduos,  sustentabilidade empresarial, sustentabilidade, meio ambiente, preservação ecológica, 
+    descarte sustentável, gestão ambiental, descarte responsável, economia circular, reciclagem industrial, soluções ambientais, descarte correto, impacto ambiental, ecologia">
+    <meta name="author" content="germanus lub">
+
+    <!-- Open Graph / Facebook (usado por várias redes sociais incluindo Instagram ao compartilhar links) -->
+    <meta property="og:title" content="<?php wp_title('|', true, 'right'); ?> <?php bloginfo('name'); ?>">
+    <meta property="og:description" content="Descrição otimizada para redes sociais.">
+    <meta property="og:image" content="<?php echo get_template_directory_uri() . '/assets/img/og-image.jpg'; ?>">
+    <meta property="og:url" content="<?php echo esc_url(home_url('/')); ?>">
+    <meta property="og:type" content="website">
+
+     <!-- Favicon -->
+     <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.ico">
     <?php wp_head(); ?>
 </head>
 
@@ -14,7 +32,7 @@
             <div class="container">
                 <a class="navbar-brand" href="<?php echo home_url(); ?>">
                     <!-- poderia ser um logo customizada. Porem o wp aplica algumas formatações que deixam a logo no centro. Pra esse projeto não me cai muito bem  -->
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="" width="" height="40" class="d-inline-block align-text-top">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="" width="" height="45" class="d-inline-block align-text-top">
                 </a>
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

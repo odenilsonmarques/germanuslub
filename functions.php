@@ -55,3 +55,6 @@ function register_services_cpt()
     register_post_type('services', $args);
 }
 add_action('init', 'register_services_cpt');
+
+
+

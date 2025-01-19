@@ -348,3 +348,13 @@ footer h5 {
 html {
     scroll-behavior: smooth;
 }
+
+a.custom-link{
+    color: #f0f0f0;
+    font-size: 15px;
+}
+
+a.custom-link:hover{
+    color: #123524;
+    font-size: 15px;
+}

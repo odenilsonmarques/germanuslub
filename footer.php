@@ -74,6 +74,7 @@
         <p class="mt-2">
             &copy GermanosLub <?php echo date('Y'); ?>. Todos os direitos reservados!
         </p>
+        <a href="https://wa.me/5598981061009?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%202ps" target="_blank" rel="noopener noreferrer" class="text-decoration-none custom-link">Desenvolvido por 2ps solutions</a>
     </div>
 </footer>
 
