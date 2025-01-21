@@ -37,6 +37,11 @@ header {
 
 }
 
+.main-menu.offcanvas-body li a:hover{
+    color: #123524;
+    text-decoration: none;
+}
+
 a.btn-highlight {
     background-color: #49AF45;
     /* Cor de destaque, exemplo: laranja */
@@ -68,14 +73,17 @@ a.btn-highlight:hover {
     }
 }
 
-
-
-
-
-
 a.custom-btn-hero {
     background-color: #123524;
+    color: #fff;
 }
+
+a.custom-btn-hero:hover {
+    color: #49AF45;
+    font-size: 20px;
+    
+}
+
 
 
 h5.card-title {
@@ -146,6 +154,15 @@ a.btn-custom-menu-mobile {
     background-color: #123524;
     /* Cor de destaque, exemplo: laranja */
     color: #ffffff;
+    /* Texto branco */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    /* Suavidade na interação */
+
+}
+
+a.btn-custom-menu-mobile:hover {
+    /* Cor de destaque, exemplo: laranja */
+    color: #49AF45;
     /* Texto branco */
     transition: background-color 0.3s ease, transform 0.2s ease;
     /* Suavidade na interação */
@@ -357,4 +374,30 @@ a.custom-link{
 a.custom-link:hover{
     color: #123524;
     font-size: 15px;
+}
+
+
+.navbar-brand img {
+height: 45px;
+max-width: 100%;
+object-fit: contain;
+}
+
+
+.custom-hero-slide {
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slide-in 1s ease-out forwards;
+}
+
+/* Definindo a animação */
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }

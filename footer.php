@@ -3,7 +3,7 @@
         <div class="row text-center">
             <div class="col mt-5 mb-4">
                 <a href="<?php echo home_url(); ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="" width="" height="40">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="" width="" height="46">
                 </a>
             </div>
         </div>
@@ -74,7 +74,7 @@
         <p class="mt-2">
             &copy GermanosLub <?php echo date('Y'); ?>. Todos os direitos reservados!
         </p>
-        <a href="https://wa.me/5598981061009?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%202ps" target="_blank" rel="noopener noreferrer" class="text-decoration-none custom-link">Desenvolvido por 2ps solutions</a>
+        <a href="https://wa.me/5598981061009?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%202ps" target="_blank" rel="noopener noreferrer" class="text-decoration-none custom-link">Desenvolvido por 2ps</a>
     </div>
 </footer>
 
