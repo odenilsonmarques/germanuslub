@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 py-5 mt-4 text-center d-flex flex-column justify-content-center align-items-center">
                 <h3 class="text-break mb-4">Possui Óleo para Descartar?</h3>
-                <img src="<?php echo get_template_directory_uri() . '/assets/img/img-descarte.png'; ?>" alt="Imagem ilustrativa" class="img-fluid w-75">
+                <img src="<?php echo get_template_directory_uri() . '/assets/img/img-section-contact.webp'; ?>" alt="Imagem ilustrativa" class="img-fluid w-75">
             </div>
 
             <div class="col-lg-6 col-md-6 col-sm-12 py-5 mt-4 text-center d-flex flex-column justify-content-center align-items-center shadow-contact">

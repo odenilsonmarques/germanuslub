@@ -270,7 +270,7 @@ p.content-text {
 
 @media (max-width: 767px) {
     .custom-caption {
-        top: 10%; /* Ajuste o valor conforme necessário para telas pequenas */
+        top: 30%; /* Ajuste o valor conforme necessário para telas pequenas */
         transform: translateY(0); /* Remove o ajuste de Y */
         padding: 0 20px; /* Adiciona algum espaçamento nas laterais para o texto não colar nas bordas */
     }
@@ -338,11 +338,13 @@ p.content-text {
 }
 
 .image-wrapper img {
-    width: 100%;
-    height: auto;
-    max-height: 600px;
-    object-fit: cover;
+    width: 100%; /* Faz a imagem ocupar toda a largura */
+    height: auto; /* Define uma altura fixa */
+   
+    object-position: center; /* Centraliza a imagem dentro do contêiner */
+    background-color: #123524; /* Fundo para imagens menores que o espaço disponível */
 }
+
 
 footer {
     background-color: #123524;
