@@ -1,7 +1,7 @@
 <!-- Offcanvas -->
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color:#49AF45">
     <div class="offcanvas-header" style="background-color:#123524">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="" width="" height="40" class="d-inline-block align-text-top">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="" width="" height="40" class="d-inline-block align-text-top">
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="color:#fff"></button>
     </div>
     <div class="main-menu offcanvas-body">

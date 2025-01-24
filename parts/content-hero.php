@@ -17,7 +17,7 @@
                     echo '<img src="' . esc_url($hero_image) . '" alt="hero' . '" class="img-fluid w-75">';
                 } else {
                     // Exibe uma imagem padrão se nenhuma imagem foi definida
-                    echo '<img src="' . get_template_directory_uri() . '/assets/img/placeholder.png" alt="imagem padrão ' . '" class="img-fluid custom-image border">';
+                    echo '<img src="' . get_template_directory_uri() . '/assets/img/placeholder.webp" alt="imagem padrão ' . '" class="img-fluid custom-image border">';
                 }
                 ?>
             </div>
