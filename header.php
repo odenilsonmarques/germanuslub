@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php wp_title('|', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 
-    <meta name="description" content="Transformamos responsabilidade ambiental em ação. Especializados na coleta correta de óleo mineral, óleo hidráulico e óleo diesel, 
-    garantimos eficiência e sustentabilidade. Nosso compromisso é promover um futuro mais limpo, consciente e alinhado com as melhores práticas de preservação ambiental">
-    <meta name="keywords" content="responsabilidade ambiental, coleta de óleo, óleo mineral, óleo hidráulico, óleo diesel, reciclagem de óleo, gestão de resíduos, 
-    impacto positivo, práticas sustentáveis, tratamento de resíduos,  sustentabilidade empresarial, sustentabilidade, meio ambiente, preservação ecológica, 
-    descarte sustentável, gestão ambiental, descarte responsável, economia circular, reciclagem industrial, soluções ambientais, descarte correto, impacto ambiental, ecologia">
+
+    <meta name="description" content="Coletamos e reciclamos óleo mineral, hidráulico e diesel com eficiência e segurança. Torne sua empresa sustentável e em conformidade com as normas ambientais. Fale conosco agora!">
+
+    <meta name="keywords" content="coleta de óleo usado, reciclagem de óleo lubrificante, descarte correto de óleo, logística reversa de óleo, coleta de óleo automotivo, reciclagem de óleo industrial, gestão sustentável de resíduos, economia circular, normas ambientais para descarte de óleo, impacto ambiental do descarte de óleo, sustentabilidade empresarial, empresas de coleta de óleo, tratamento de resíduos industriais, soluções ambientais para empresas, descarte responsável de óleo lubrificante, óleo queimado reciclagem, descarte sustentável de óleo hidráulico, reaproveitamento de óleo usado, certificação ambiental empresas, preservação ecológica, práticas sustentáveis na indústria, sustentabilidade no setor automotivo, descarte correto de óleo diesel">
+
+    
     <meta name="author" content="germanus lub">
 
     <!-- Open Graph / Facebook (usado por várias redes sociais incluindo Instagram ao compartilhar links) -->
-    <meta property="og:title" content="<?php wp_title('|', true, 'right'); ?> <?php bloginfo('name'); ?>">
-    <meta property="og:description" content="Descrição otimizada para redes sociais.">
-    <meta property="og:image" content="<?php echo get_template_directory_uri() . '/assets/img/og-image.jpg'; ?>">
+    <meta property="og:title" content="<?php wp_title(' - ', true, 'right'); ?> Página Inicial | Germanus Lub">
+    <meta property="og:description" content="<?php echo get_the_excerpt(); ?>">
+    <meta property="og:image" content="<?php echo get_template_directory_uri() . '/assets/img/og-image.png'; ?>">
     <meta property="og:url" content="<?php echo esc_url(home_url('/')); ?>">
     <meta property="og:type" content="website">
 

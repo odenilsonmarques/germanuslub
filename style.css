@@ -85,7 +85,6 @@ a.custom-btn-hero:hover {
 }
 
 
-
 h5.card-title {
     color: #123524;
 }
@@ -402,4 +401,35 @@ object-fit: contain;
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+
+
+/* css para o blog */
+
+.custom-img-card{
+    width: 100%; /* Para garantir que ocupe toda a largura disponível */
+    height: 200px; /* Ajuste a altura conforme necessário */
+    object-fit: cover; /* Garante que a imagem preencha a área sem distorcer */
+    border-radius: 8px; /* Mantém os cantos arredondados */
+}
+
+
+
+/* Altera o fundo apenas para a área de conteúdo do blog */
+.post{
+    background-color: #eff2ff; /* Cor do fundo */
+}
+
+
+a.btn-custom-card-blog{
+    background-color: #49AF45;
+    color: #eff2ff;
+}
+
+
+a.btn-custom-card-blog:hover{
+    background-color: #eff2ff;
+    color: #123524;
+    border: 1px solid #49AF45;
 }
