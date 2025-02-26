@@ -1,22 +1,25 @@
 <?php get_header(); ?>
 
-
 <section class="post">
     <div class="container">
-        <h2 class="text-center py-5 mt-5 fs-3 mb-5">Bem-vindo ao nosso blog</h2>
+        <h2 class="text-center py-5 fs-3 mb-4">Bem-vindo ao nosso blog</h2>
         <div class="row">
+
             <?php
+
+            //essa linha de código é responsável por exibir os posts na página inicial do blog.
             $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
             $args = array(
-                'posts_per_page' => 6, // Exibir 6 posts por página (3 por linha)
-                'paged' => $paged
+                'posts_per_page' => 3, // Exibir 6 posts por página (3 por linha)
+                'paged' => $paged,
             );
             $query = new WP_Query($args);
 
             if ($query->have_posts()) :
                 while ($query->have_posts()) : $query->the_post();
             ?>
-                    <div class="col-md-4 mb-4">
+
+                    <div class="col-md-4 mb-5">
                         <div class="card h-100 shadow-sm border-0">
                             <?php
                             if (has_post_thumbnail()) :
@@ -50,7 +53,15 @@
                     </div>
             <?php
                 endwhile;
-                echo '<div class="col-12 d-flex justify-content-center">' . paginate_links(array('total' => $query->max_num_pages)) . '</div>';
+                // exibe o sistema de paginação 
+                echo '<div class="pagination justify-content-center gap-2 mx-2 mb-5">';
+                echo paginate_links(array(
+                    'total' => $query->max_num_pages,
+                    'prev_text' => __('« Anterior'),
+                    'next_text' => __('Próximo »'),
+                ));
+                echo '</div>';
+               
             else :
                 echo '<p class="text-center">Nenhum post encontrado.</p>';
             endif;

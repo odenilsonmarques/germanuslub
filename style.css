@@ -421,6 +421,10 @@ object-fit: contain;
     background-color: #eff2ff; /* Cor do fundo */
 }
 
+.post h2{
+    margin-top: 50px;
+}
+
 
 a.btn-custom-card-blog{
     background-color: #49AF45;
