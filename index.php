@@ -4,9 +4,7 @@
     <div class="container">
         <h2 class="text-center py-5 fs-3 mb-4">Bem-vindo ao nosso blog</h2>
         <div class="row">
-
             <?php
-
             //essa linha de código é responsável por exibir os posts na página inicial do blog.
             $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
             $args = array(
@@ -51,7 +49,7 @@
 
                         </div>
                     </div>
-            <?php
+                <?php
                 endwhile;
                 // exibe o sistema de paginação 
                 echo '<div class="pagination justify-content-center gap-2 mx-2 mb-5">';
@@ -61,9 +59,18 @@
                     'next_text' => __('Próximo »'),
                 ));
                 echo '</div>';
-               
+
             else :
-                echo '<p class="text-center">Nenhum post encontrado.</p>';
+                ?>
+                <div class="text-center">
+                    <p>Nenhum post encontrado.</p>
+                    <!-- Botão centralizado e abaixo do texto -->
+                    <a href="<?php echo home_url(); ?>" class="d-block text-decoration-none mb-3 rounded">Ir para página inicial</a>
+                    <!-- Imagem abaixo do botão -->
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/placeholder.webp"
+                        alt="Nenhum post encontrado" class="img-fluid mb-5" style="max-width: 200px;">
+                </div>
+            <?php
             endif;
             wp_reset_postdata();
             ?>

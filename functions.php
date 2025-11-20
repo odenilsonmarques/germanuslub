@@ -2,6 +2,10 @@
 
 require_once get_template_directory() . '/inc/customizer.php';
 
+// Bootstrap Navwalker 
+require_once get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
+
+
 //funcao para carregar os arquivos de estilo e javascript
 function load_scripts()
 {
@@ -18,7 +22,9 @@ function germanuslubs_config()
     register_nav_menus(
         array(
             'main_menu' => 'Menu Principal',
-            'footer_menu' => 'Menu rodape'
+            'footer_menu' => 'Menu rodape',
+            'mobile_menu' => 'Menu Mobile'
+
         )
     );
 

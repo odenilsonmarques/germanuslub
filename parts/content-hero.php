@@ -1,30 +1,154 @@
-<section class="custom-background-hero" id="hero">
-    <div class="container custom-hero-slide">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 py-5 mt-4">
-                <h1 class="text-white mt-4"><?php echo esc_html(get_theme_mod('set_hero_title', 'Título padrão')); ?></h1>
-                <p class="text-white fs-5"><?php echo esc_html(get_theme_mod('set_hero_subtitle', 'Subtitulo padrão')); ?></p>
-                <a href="<?php echo esc_url(get_theme_mod("set_hero_button_link")); ?>" target="_blank" rel="noopener noreferrer" class="btn btn-lg text-decoration-none fw-bolder fs-6 custom-btn-hero">
-                    <?php echo esc_html(get_theme_mod("set_hero_text_button", 'texto do botão')); ?>
-                </a>
+<?php
+$hero_bg = get_theme_mod('set_hero_background');
+?>
+
+<section
+    id="hero"
+    class="hero-modern"
+    style="background: <?php echo $hero_bg ? 'url(' . esc_url($hero_bg) . ') center/cover no-repeat' : '#0a8f3d'; ?>;">
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content text-center">
+
+        <h1 class="hero-title">
+            <?php echo esc_html(get_theme_mod('set_hero_title', 'Como podemos te ajudar hoje?')); ?>
+        </h1>
+
+        <p class="hero-subtitle">
+            <?php echo esc_html(get_theme_mod('set_hero_subtitle', '')); ?>
+        </p>
+
+        <div class="hero-services row justify-content-center mt-5">
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <div class="hero-card">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/calendar.svg" class="hero-icon">
+
+                    <p>Agendar coleta de óleo</p>
+                </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 py-5 text-center mt-3">
-                <?php
-                // Verifica se a imagem foi definida
-                $hero_image = get_theme_mod("set_hero_image");
-                if ($hero_image) {
-                    // Exibe a imagem definida
-                    echo '<img src="' . esc_url($hero_image) . '" alt="hero' . '" class="img-fluid w-75">';
-                } else {
-                    // Exibe uma imagem padrão se nenhuma imagem foi definida
-                    echo '<img src="' . get_template_directory_uri() . '/assets/img/placeholder.webp" alt="imagem padrão ' . '" class="img-fluid custom-image border">';
-                }
-                ?>
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <div class="hero-card">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/drop-1.svg" class="hero-icon">
+                    <p>Coleta de Óleo Mineral</p>
+                </div>
             </div>
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <div class="hero-card">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/drop-2.svg" class="hero-icon">
+                    <p>Coleta de Óleo Hidráulico</p>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <div class="hero-card">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/drop-3.svg" class="hero-icon">
+                    <p>Coleta de Óleo Diesel</p>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
 
 
+<style>
+    /* .hero-icon {
+        width: 2rem;
+        height: 3rem;
+    } */
+
+    /* .custom-background-hero {
+        position: relative;
+        padding: 80px 0;
+    }
+
+    .custom-background-hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.55);
+        z-index: 1;
+    }
+
+    .custom-background-hero .container {
+        position: relative;
+        z-index: 2;
+    } */
 
 
+    /* --- HERO MODERNO --- */
+    .hero-modern {
+        position: relative;
+        padding: 130px 0 90px;
+        min-height: 520px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(2, 80, 20, 0.60);
+        /* verde com transparência */
+        z-index: 1;
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        color: #fff;
+    }
+
+    /* Título */
+    .hero-title {
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-size: 20px;
+        opacity: 0.9;
+    }
+
+    /* Cards */
+    .hero-card {
+        background: #fff;
+        border-radius: 16px;
+        padding: 25px 10px;
+        text-align: center;
+        cursor: pointer;
+        transition: all .25s ease;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+    }
+
+    .hero-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    .hero-card p {
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 12px;
+        color: #0a8f3d;
+    }
+
+    .hero-icon {
+        width: 45px;
+        height: auto;
+        opacity: 0.9;
+
+    }
+</style>

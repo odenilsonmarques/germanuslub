@@ -89,7 +89,7 @@ function customize_germanus_lub($wp_customize)
 
       //imagem
       $wp_customize->add_setting(
-        'set_hero_image',
+        'set_hero_background',
         array(
             'default'           => '', // Defina um valor padrão, se necessário
             'sanitize_callback' => 'esc_url_raw', // Sanitização da URL da imagem
@@ -99,12 +99,12 @@ function customize_germanus_lub($wp_customize)
     $wp_customize->add_control(
         new WP_Customize_Image_Control(
             $wp_customize,
-            'set_about_image',
+            'set_hero_background',
             array(
-                'label'      => __('Defina uma imagem', 'your-textdomain'),
+                'label'      => __('Imagem de background da Hero', 'your-textdomain'),
                 'section'    => 'sec_hero',
-                'settings'   => 'set_hero_image',
-                'description' => __('Carregue uma imagem para a seção', 'your-textdomain'),
+                'settings'   => 'set_hero_background',
+                'description' => __('Carregue uma imagem para usar como fundo da seção hero.', 'your-textdomain'),
             )
         )
     );
