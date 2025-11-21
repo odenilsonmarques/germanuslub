@@ -85,12 +85,12 @@ $hero_bg = get_theme_mod('set_hero_background');
     /* --- HERO MODERNO --- */
     .hero-modern {
         position: relative;
-        padding: 130px 0 90px;
-        min-height: 520px;
+        padding: 60px 0 70px;
+        min-height: 650px;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 50px;
+        margin-top: 70px;
     }
 
     .hero-overlay {
