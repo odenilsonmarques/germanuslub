@@ -18,7 +18,7 @@ body {
    HEADER
 --------------------------- */
 header {
-        background-color: #1A3A32;
+    background-color: #1A3A32;
 
 }
 
@@ -112,7 +112,7 @@ a.btn-highlight {
     background-color: #49AF45;
     color: #ffffff;
     transition: background-color 0.3s ease, transform 0.2s ease;
-     margin-left: 20px;
+    margin-left: 20px;
 }
 
 a.btn-highlight:hover {
@@ -147,8 +147,16 @@ a.custom-btn-hero:hover {
 }
 
 
-h5.card-title {
-    color: #123524;
+
+
+.our-services {
+    padding: 60px 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0A8F3D;
 }
 
 p.card-text {
@@ -182,6 +190,12 @@ a.custom-btn-services {
     transform: scale(1.05);
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
 }
+
+
+
+
+
+
 
 .contacts {
     background-color: #123524;

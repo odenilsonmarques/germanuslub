@@ -23,7 +23,8 @@ function germanuslubs_config()
         array(
             'main_menu' => 'Menu Principal',
             'footer_menu' => 'Menu rodape',
-            'mobile_menu' => 'Menu Mobile'
+            'mobile_menu' => 'Menu Mobile',
+            'related_services' => 'Menu Serviços Relacionados'
 
         )
     );
@@ -55,7 +56,7 @@ function register_services_cpt()
     $args = [
         'labels'             => $labels,
         'public'             => true,
-        'has_archive'        => true,
+        'has_archive'        => false,
         'rewrite'            => ['slug' => 'servicos'],
         'supports'           => ['title', 'editor', 'thumbnail'],
         'menu_icon'          => 'dashicons-admin-tools',
@@ -64,36 +65,6 @@ function register_services_cpt()
     register_post_type('services', $args);
 }
 add_action('init', 'register_services_cpt');
-
-
-// cpt para adicionar campo URL personalizado nos serviços
-function servicos_add_custom_meta_box() {
-    add_meta_box(
-        'servico_page_url',
-        'URL da Página do Serviço',
-        'servicos_page_url_callback',
-        'services', // <-- corrige aqui
-        'normal',
-        'default'
-    );
-}
-add_action('add_meta_boxes', 'servicos_add_custom_meta_box');
-
-function servicos_page_url_callback($post) {
-    $value = get_post_meta($post->ID, '_service_page_url', true);
-    echo '<input type="text" name="service_page_url" value="' . esc_attr($value) . '" style="width:100%" placeholder="https://seudominio.com.br/coleta-de-oleo-mineral/">';
-}
-
-function servicos_save_meta_box($post_id) {
-    if (array_key_exists('service_page_url', $_POST)) {
-        update_post_meta(
-            $post_id,
-            '_service_page_url',
-            sanitize_text_field($_POST['service_page_url'])
-        );
-    }
-}
-add_action('save_post', 'servicos_save_meta_box');
 
 
 

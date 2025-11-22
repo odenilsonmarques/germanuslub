@@ -107,7 +107,7 @@ $cta_link = get_theme_mod('set_service_coleta_mineral_cta_link', '#contato');
 
             <!-- FAQ -->
             <section class="service-faq mb-4 p-4">
-               <?php get_template_part('parts/content', 'perguntas-frequentes'); ?>
+                <?php get_template_part('parts/content', 'perguntas-frequentes'); ?>
             </section>
 
         </div>
@@ -115,6 +115,7 @@ $cta_link = get_theme_mod('set_service_coleta_mineral_cta_link', '#contato');
         <section class="col-md-4">
             <!-- Sidebar de contato / CTA -->
             <?php get_template_part('parts/content', 'sidebar-cta'); ?>
+
             <!-- Menu de serviços relacionados -->
             <?php get_template_part('parts/content', 'menu-services'); ?>
         </section>
