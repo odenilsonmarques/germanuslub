@@ -33,8 +33,6 @@
                             </div>
                         </div>
                     </div>
-
-
                 <?php endwhile;
                 wp_reset_postdata();
             else : ?>
@@ -43,10 +41,3 @@
         </div>
     </div>
 </section>
-
-
-<style>
-   
-
-  
-</style>

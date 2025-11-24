@@ -3,7 +3,7 @@
         <div class="row text-center">
             <div class="col mt-5 mb-4">
                 <a href="<?php echo home_url(); ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="" width="" height="46">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="img-logo" width="" height="46">
                 </a>
             </div>
         </div>

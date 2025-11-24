@@ -14,17 +14,12 @@ body {
     background-color: #fff;
 }
 
-/* --------------------------
-   HEADER
---------------------------- */
 header {
     background-color: #1A3A32;
 
 }
 
-/* --------------------------
-   MENU PRINCIPAL (NÍVEL 1)
---------------------------- */
+/* Css para o menu principal*/
 .navbar-nav .nav-item {
     margin-right: 20px;
 }
@@ -44,11 +39,7 @@ header {
     color: #49AF45 !important;
 }
 
-/* --------------------------
-   DROPDOWN (SUBMENUS)
---------------------------- */
-
-/* Caixa do dropdown */
+/* Css para odropdown (SUBMENUS) */
 .navbar-nav .dropdown-menu {
     background-color: #1A3A32;
     padding: 10px 0;
@@ -81,9 +72,7 @@ header {
     }
 }
 
-/* --------------------------
-   MENU MOBILE (OFFCANVAS)
---------------------------- */
+/*Css para o menu mobile(OFFCANVAS) */
 .offcanvas-body .nav-link {
     color: #123524 !important;
 }
@@ -121,34 +110,77 @@ a.btn-highlight:hover {
     color: #49AF45;
 }
 
-
-.custom-background-hero {
-    background-color: #49AF45;
-    margin-top: 50px;
+/* css para hero */
+.hero-modern {
+    position: relative;
+    padding: 60px 0 70px;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
 }
 
-
-@media (max-width: 767px) {
-    .custom-background-hero {
-        background-color: #49AF45;
-        margin-top: 30px;
-    }
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 80, 20, 0.60);
+    /* verde com transparência */
+    z-index: 1;
 }
 
-a.custom-btn-hero {
-    background-color: #123524;
+.hero-content {
+    position: relative;
+    z-index: 2;
     color: #fff;
 }
 
-a.custom-btn-hero:hover {
-    color: #49AF45;
+/* Título */
+.hero-title {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
     font-size: 20px;
+    opacity: 0.9;
+}
+
+/* Cards */
+.hero-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 25px 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .25s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+.hero-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.hero-card p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 12px;
+    color: #0a8f3d;
+}
+
+.custom-icon {
+    width: 45px;
+    height: auto;
+    opacity: 0.9;
 
 }
 
-
-
-
+/* css para section-services */
 .our-services {
     padding: 60px 0;
 }
@@ -156,7 +188,7 @@ a.custom-btn-hero:hover {
 .section-title {
     font-size: 2rem;
     font-weight: 700;
-    color: #0A8F3D;
+    color: #49AF45;
 }
 
 p.card-text {
@@ -166,7 +198,6 @@ p.card-text {
 .our-services {
     padding: 40px;
 }
-
 
 a.custom-btn-services {
     border: 1px solid #49AF45;
@@ -192,19 +223,14 @@ a.custom-btn-services {
 }
 
 
-
-
-
-
-
+/* css para section-contacts */
 .contacts {
-    background-color: #123524;
+    background-color: #1A3A32;
     padding: 30px
 }
 
 .contacts h3 {
     max-width: 250px;
-    /* border: 1px solid red; */
     color: #49AF45;
 }
 
@@ -216,65 +242,48 @@ a.custom-btn-services {
 
 a.custom-btn-contact {
     background-color: #49AF45;
-    /* Cor de destaque, exemplo: laranja */
     color: #ffffff;
-    /* Texto branco */
     transition: background-color 0.3s ease, transform 0.2s ease;
-    /* Suavidade na interação */
-
 }
-
 
 a.btn-custom-menu-mobile {
     background-color: #123524;
-    /* Cor de destaque, exemplo: laranja */
     color: #ffffff;
-    /* Texto branco */
     transition: background-color 0.3s ease, transform 0.2s ease;
-    /* Suavidade na interação */
-
 }
 
 a.btn-custom-menu-mobile:hover {
-    /* Cor de destaque, exemplo: laranja */
     color: #49AF45;
-    /* Texto branco */
     transition: background-color 0.3s ease, transform 0.2s ease;
-    /* Suavidade na interação */
-
 }
-
 
 .shadow-contact {
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Css para section-about */
 .about {
     padding: 40px;
 }
 
-.about .text-about {
-    /* padding-top: 20px; */
+.about h2 {
+    color: #49AF45;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 .about span {
     color: #49AF45;
 }
 
-/* .about .text-about:hover {
-    animation: fadeInUp 1s ease-in-out;
-} */
-
 p.text-about {
     font-family: Akshar, sans-serif;
     font-size: 23px;
     color: #123524;
-
-
 }
 
 .about .card-infor {
-    background: #123524;
+    background: #1A3A32;
     padding: 20px;
     max-width: 450px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -284,7 +293,6 @@ p.text-about {
 .about .card-infor:hover {
     transform: scale(1.05);
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
-
 }
 
 
@@ -320,118 +328,59 @@ p.content-text {
     color: #FFFFFF;
 }
 
-/* estilo para o slide */
-.image-wrapper::before {
-    content: '';
+
+/* Css para a section-sustenability */
+.sustenability-banner {
+    background: url('/wp-content/themes/germanuslub/assets/img/img-slide-one.webp') center/cover no-repeat;
+    padding: 90px 0;
+    position: relative;
+}
+
+.sustenability-banner::before {
+    content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 06));
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
 }
 
-.custom-caption {
-    top: 35%;
-    /* Ajuste o valor conforme necessário */
-    transform: translateY(-5%);
-    /* Centraliza verticalmente baseado no valor do top */
-    position: absolute;
-    /* Garante que o top funcione */
+.inst-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    z-index: 2;
 }
 
-
-
-
-
-@media (max-width: 767px) {
-    .custom-caption {
-        top: 30%;
-        /* Ajuste o valor conforme necessário para telas pequenas */
-        transform: translateY(0);
-        /* Remove o ajuste de Y */
-        padding: 0 20px;
-        /* Adiciona algum espaçamento nas laterais para o texto não colar nas bordas */
-    }
-
-    .carousel-caption.custom-caption h5 {
-        font-size: 13px;
-    }
-
-    .carousel-caption.custom-caption p {
-        font-size: 10px;
-        margin-bottom: 20px;
-    }
-}
-
-.custom-caption h5 {
-    color: #ffffff;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
-    font-size: 30px;
-}
-
-.custom-caption p {
+.inst-subtitle {
+    font-size: 1.1rem;
     color: #f0f0f0;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    opacity: .95;
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
 }
 
-.custom-caption h5 {
-    animation: fadeIn 2s ease-in-out;
+.sustenability-highlights {
+    margin-top: 40px;
 }
 
-.custom-caption p {
-    animation: fadeInUp 2s ease-in-out;
+.sustenability-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 22px;
+    border: 1px solid #49AF45;
+    transition: .3s ease;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        transform: translateY(20px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-.custom-caption h5 {
-    font-family: 'Poppins', sans-serif;
-    /* font-size: 2.5rem; */
-    font-weight: 700;
-}
-
-.custom-caption p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 700;
-}
-
-.image-wrapper img {
-    width: 100%;
-    /* Faz a imagem ocupar toda a largura */
-    height: auto;
-    /* Define uma altura fixa */
-
-    object-position: center;
-    /* Centraliza a imagem dentro do contêiner */
-    background-color: #123524;
-    /* Fundo para imagens menores que o espaço disponível */
+.sustenability-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12);
 }
 
 
+/* Css para o footer */
 footer {
-    background-color: #123524;
+    background-color: #1A3A32;
 }
 
 footer h5 {
@@ -489,39 +438,177 @@ a.custom-link:hover {
     }
 }
 
+/* Css para as pages */
+.service-hero {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+    min-height: 340px;
+    display: flex;
+    align-items: center;
+}
 
+.service-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 143, 61, 0.78);
+    /* overlay verde similar ao hero */
+    z-index: 1;
+}
 
-/* css para o blog */
+.service-hero .container {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
 
-.custom-img-card {
-    width: 100%;
-    /* Para garantir que ocupe toda a largura disponível */
-    height: 200px;
-    /* Ajuste a altura conforme necessário */
-    object-fit: cover;
-    /* Garante que a imagem preencha a área sem distorcer */
-    border-radius: 8px;
-    /* Mantém os cantos arredondados */
+.service-title {
+    font-size: 44px;
+    font-weight: 800;
+    line-height: 1.08;
+    margin-bottom: 12px;
+}
+
+.service-subtitle {
+    font-size: 18px;
+    opacity: 0.95;
+    max-width: 720px;
+}
+
+/* service main icon */
+.service-main-icon {
+    width: 160px;
+    opacity: 0.95;
+}
+
+/* CONTENT */
+.service-content h2,
+.service-content h3 {
+    color: #123524;
+    font-weight: 700;
+}
+
+.card {
+    border: none;
+}
+
+.service-desc {
+    background: #fff;
+    border-radius: 10px;
+    /* box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06); */
+}
+
+/* STEPS */
+.step-card {
+    background: #fff;
+    border-radius: 10px;
+    text-align: left;
+    height: 100%;
+    /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04); */
+}
+
+.step-card p {
+    margin: 6px 0 0;
+    color: #4a4a4a;
+}
+
+.step-icon img {
+    width: 42px;
+}
+
+/* BENEFITS */
+.benefit-card {
+    background: #fff;
+    border-radius: 10px;
+    /* box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04); */
+}
+
+.benefit-card p {
+    margin: 6px 0 0;
+    color: #4a4a4a;
 }
 
 
 
+/* SIDEBAR CTA */
+.related-services li {
+    padding: 8px 0;
+}
+
+.related-services li a {
+    color: #0A7A36;
+    font-weight: 600;
+}
+
+/* BOTÕES (reaproveita seu estilo) */
+.btn-highlightt {
+    background-color: #49AF45;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+.btn-highlightt:hover {
+    background-color: #fff;
+    color: #49AF45;
+    transform: scale(1.02);
+}
+
+/* Mobile adjustments */
+@media (max-width: 991px) {
+    .service-title {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .service-subtitle {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .service-main-icon {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* css para o blog */
+.custom-img-card {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
 /* Altera o fundo apenas para a área de conteúdo do blog */
 .post {
     background-color: #eff2ff;
-    /* Cor do fundo */
 }
 
 .post h2 {
     margin-top: 50px;
 }
 
-
 a.btn-custom-card-blog {
     background-color: #49AF45;
     color: #eff2ff;
 }
-
 
 a.btn-custom-card-blog:hover {
     background-color: #eff2ff;

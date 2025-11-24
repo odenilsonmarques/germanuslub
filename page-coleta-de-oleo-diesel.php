@@ -62,21 +62,21 @@ $cta_link = get_theme_mod('set_service_coleta_mineral_cta_link', '#contato');
                 <div class="row g-3 ">
                     <div class="col-md-4 ">
                         <div class="step-card">
-                            <div class="step-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/calendar.svg" alt=""></div>
+                            <div class="step-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/calendar.svg" alt="img-calendar"></div>
                             <strong>1. Agendamento</strong>
                             <p>Faça o agendamento pelo formulário ou WhatsApp.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="step-card">
-                            <div class="step-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/truck-line.svg" alt=""></div>
+                            <div class="step-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/truck-line.svg" alt="img-truck"></div>
                             <strong>2. Coleta no local</strong>
                             <p>Nossa equipe realiza a coleta conforme combinado.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="step-card">
-                            <div class="step-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/verified.svg" alt=""></div>
+                            <div class="step-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/verified.svg" alt="img-verified"></div>
                             <strong>3. Destinação e certificado</strong>
                             <p>Receba o certificado de destinação após o processo.</p>
                         </div>
@@ -90,14 +90,14 @@ $cta_link = get_theme_mod('set_service_coleta_mineral_cta_link', '#contato');
                 <div class="row g-3">
                     <div class="col-md-6">
                         <div class="benefit-card ">
-                            <div class="step-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/profile-line.svg" alt=""></div>
+                            <div class="step-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/profile-line.svg" alt="img-profile"></div>
                             <strong>Conformidade legal</strong>
                             <p>Atende às normas e legislações vigentes.</p>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="benefit-card">
-                            <div class="step-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/leaf-line.svg" alt=""></div>
+                            <div class="step-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/leaf-line.svg" alt="img-leaf"></div>
                             <strong>Sustentabilidade</strong>
                             <p>Reduz impacto ambiental por meio de destino correto.</p>
                         </div>
@@ -125,7 +125,7 @@ $cta_link = get_theme_mod('set_service_coleta_mineral_cta_link', '#contato');
 
 <?php get_footer(); ?>
 
-
+<!-- 
 <style>
     /* ====== Service Page: Coleta de Óleo Mineral ====== */
 
@@ -262,4 +262,4 @@ $cta_link = get_theme_mod('set_service_coleta_mineral_cta_link', '#contato');
             display: none;
         }
     }
-</style>
+</style> -->
