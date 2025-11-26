@@ -22,7 +22,7 @@ $cta_link = get_theme_mod('set_service_coleta_mineral_cta_link', '#contato');
                     <p class="service-subtitle"><?php echo esc_html($subtitle); ?></p>
                 <?php endif; ?>
 
-                <a href="<?php echo esc_url($cta_link); ?>" class="btn btn-custom-type-services btn-lg mt-3">
+                <a href="https://wa.me/5598981061009?text=Ol%C3%A1!%20Tudo%20bem%3F%20Tenho%20interesse%20no%20processo%20de%20coleta%20da%20Germanus%20e%20gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es." class="btn btn-custom-type-services btn-lg mt-3">
                     <?php echo esc_html($cta_text); ?>
                 </a>
             </div>

@@ -698,21 +698,6 @@ a.btn-highlightt:hover {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* css para o blog */
 .custom-img-card {
     width: 100%;
@@ -740,3 +725,30 @@ a.btn-custom-card-blog:hover {
     color: #123524;
     border: 1px solid #49AF45;
 }
+
+
+/* css para o banner de cookies  */
+#cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #1A3A32;
+  color: #fff;
+  padding: 15px;
+  display: none;
+  z-index: 999999;
+  text-align: center;
+  font-size: 15px;
+}
+
+#cookie-banner button {
+  margin-left: 10px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#cookie-accept { background: #2ecc71; color: #fff; }
+#cookie-deny { background: #e74c3c; color: #fff; }

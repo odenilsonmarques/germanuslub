@@ -78,7 +78,11 @@
     </div>
 </footer>
 
-<?php get_footer(); ?>
+<?php get_template_part('parts/content', 'banner-cookie'); ?>
+
+<?php wp_footer(); ?>
+
+
 </body>
 
 </html>

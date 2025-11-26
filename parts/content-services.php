@@ -23,7 +23,8 @@
                                 </p>
 
                                 <div class="mt-3 d-flex justify-content-between">
-                                    <a href="https://wa.me/5511932117180?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20<?php echo urlencode(get_the_title()); ?>."
+                                    <a href="https://wa.me/5598981061009?text=Ol%C3%A1!%20Tudo%20bem%3F%20Tenho%20interesse%20no%20processo%20de%20coleta%20da%20Germanus%20e%20gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es.
+<?php echo urlencode(get_the_title()); ?>."
                                         target="_blank"
                                         class="btn btn-sm custom-btn-services">
                                         Fale conosco
