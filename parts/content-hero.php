@@ -1,7 +1,6 @@
 <?php
 $hero_bg = get_theme_mod('set_hero_background');
 ?>
-
 <section
     id="hero"
     class="hero-modern"
@@ -20,36 +19,35 @@ $hero_bg = get_theme_mod('set_hero_background');
 
         <div class="hero-services row justify-content-center mt-5">
 
-            <div class="col-lg-2 col-md-3 col-6">
-                <div class="hero-card">
+            <div class="col-lg-2 col-md-3 col-12 mb-3 mb-lg-0">
+                <div class="hero-card text-center">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/calendar.svg" class="custom-icon" alt="img-calendar">
-
                     <p>Agendar coleta de óleo</p>
                 </div>
             </div>
 
-            <div class="col-lg-2 col-md-3 col-6">
-                <div class="hero-card">
+            <div class="col-lg-2 col-md-3 col-12 mb-3 mb-lg-0">
+                <div class="hero-card text-center">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/drop-1.svg" class="custom-icon" alt="img-drop1">
                     <p>Coleta de Óleo Mineral</p>
                 </div>
             </div>
 
-            <div class="col-lg-2 col-md-3 col-6">
-                <div class="hero-card">
+            <div class="col-lg-2 col-md-3 col-12 mb-3 mb-lg-0">
+                <div class="hero-card text-center">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/drop-2.svg" class="custom-icon" alt="img-drop2">
                     <p>Coleta de Óleo Hidráulico</p>
                 </div>
             </div>
 
-            <div class="col-lg-2 col-md-3 col-6">
-                <div class="hero-card">
+            <div class="col-lg-2 col-md-3 col-12 mb-3 mb-lg-0">
+                <div class="hero-card text-center">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/drop-3.svg" class="custom-icon" alt="img-drop3">
                     <p>Coleta de Óleo Diesel</p>
                 </div>
             </div>
 
         </div>
+
     </div>
 </section>
-

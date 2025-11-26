@@ -33,7 +33,6 @@
         <nav class="main-menu navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <a class="navbar-brand" href="<?php echo home_url(); ?>">
-                    <!-- poderia ser um logo customizada. Porem o wp aplica algumas formatações que deixam a logo no centro. Pra esse projeto não me cai muito bem  -->
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="" width="" height="" class="d-inline-block align-text-top">
                 </a>
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

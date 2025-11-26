@@ -10,7 +10,7 @@
 <section class="sustenability-highlights mb-5">
     <div class="container">
         <div class="row text-center">
-            <div class="col-md-4">
+            <div class="col-md-4 mb-3">
                 <div class="sustenability-card shadow-sm">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/recycle-fill.svg" class="custom-icon" alt="img-recycle">
                     <h5>Coleta Sustentável</h5>
@@ -18,7 +18,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 mb-3">
                 <div class="sustenability-card shadow-sm">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/plant-line.svg" class="custom-icon" alt="img-plant">
                     <h5>Responsabilidade</h5>
@@ -26,7 +26,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 mb-3">
                 <div class="sustenability-card shadow-sm">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bar-chart-fill.svg" class="custom-icon" alt="img-bar">
                     <h5>Transparência</h5>
